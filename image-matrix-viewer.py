@@ -3,10 +3,15 @@ import pygame
 import numpy as np
 running = True
 pygame.init()
-mode = 1 #0 for separate values 1 for on same pixel
+pygame.display.set_caption('matrixMagnifier')
 
+## change these values to customize
+mode = 0 #0 for separate values 1 for on same pixel
 res = 40
 nx, ny = 10, 10
+
+## from this line onward do not change anything untill you know ehat are you doing
+
 fontsize = res//4
 if mode:
     scr = pygame.display.set_mode((res*nx+1,res*ny))
